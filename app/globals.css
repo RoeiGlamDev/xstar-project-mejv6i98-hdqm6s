@@ -1,0 +1,43 @@
+import { createGlobalStyle } from 'styled-components'; // Import styled-components for global styles
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; // Use a clean, modern font
+    background-color: #000; // Black background for luxury feel
+    color: #f1c40f; // Elegant pink color for text
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #f1c40f; // Pink color for headings
+    font-weight: bold; // Bold headings for emphasis
+  }
+
+  a {
+    color: #f1c40f; // Pink color for links
+    text-decoration: none; // No underline for links
+    transition: color 0.3s; // Smooth transition for hover effect
+  }
+
+  a:hover {
+    color: #e67e22; // Change link color on hover
+  }
+
+  button {
+    background-color: #f1c40f; // Pink button background
+    color: #000; // Black text on buttons
+    border: none; // No border for buttons
+    padding: 10px 20px; // Padding for buttons
+    border-radius: 5px; // Rounded corners for buttons
+    cursor: pointer; // Pointer cursor on hover
+    transition: background-color 0.3s; // Smooth transition for hover effect
+  }
+
+  button:hover {
+    background-color: #e67e22; // Change button background on hover
+  }
+
+  // Add any additional global styles below
+`;
+
+export default GlobalStyle; // Export the global styles for use in the app
